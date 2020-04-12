@@ -1,0 +1,23 @@
+#search{
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    color: black;
+    font-family: 'Roboto','Noto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 4px;
+    max-width: 50%;
+    outline: none;
+    text-align: inherit;
+    width: 50%;
+    -ms-flex: 1 1 .000000001px;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-flex-basis: .000000001px;
+    flex-basis: .000000001px;
+    
+}

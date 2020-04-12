@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MoviesService } from './services/movies.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'movieApp';
+ 
+constructor(public _movies:MoviesService){
+this._movies.getKids().subscribe(resp=>{
+  console.log(resp);
+  console.log('hello')
+})
+}
+
+
 }

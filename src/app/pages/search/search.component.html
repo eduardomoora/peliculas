@@ -1,0 +1,27 @@
+
+<div class="container contenedor">
+   
+    <div class="row">
+        <div class="form-group">
+           
+            <input
+                   [(ngModel)]="buscar"
+                   name="buscar"
+                   (keyup)="buscarPelicula()"
+                   type="text"
+                   class="form-control input"
+                   placeholder="Buscar titulo"
+                     >
+        </div>
+            
+         </div>
+</div>
+
+
+ <div class="contenedor container ">
+     <div  *ngFor="let movie of _peliculas.peliculas">
+         <a [routerLink]="['/detalles',movie.id,'search']" routerLinkActive="router-link-active" ><img class="prueba" src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt=""> </a>
+     </div> 
+     
+ </div>
+

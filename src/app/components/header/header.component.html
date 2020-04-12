@@ -1,0 +1,30 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+     
+        
+            <i class="fab fa-angular fa-3x"></i>
+            <span [routerLink]="['/home']" routerLinkActive="router-link-active"  class="m-3 link puntero">Home</span>
+            <span [routerLink]="['/search']" routerLinkActive="router-link-active"  class="m-3 link puntero">Search</span>
+        
+        <form (ngSubmit)="buscarPelicula(buscar.value)" class="form-inline">
+            <input class="form-control"
+             type="text" 
+
+                   placeholder="Search" 
+                   #buscar
+            >
+            <button mat-icon-button type="submit" >
+             <mat-icon >search</mat-icon>
+           </button>
+        </form>
+  
+      </mat-toolbar-row>
+
+     </mat-toolbar>
+
+
+    
+      
+      
+        
+     

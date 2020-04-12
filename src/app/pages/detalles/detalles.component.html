@@ -1,0 +1,34 @@
+
+
+<div class="container pt-3">
+    
+<div class="row">
+<div class="col-6" >
+    <h1 class="pt-3">{{pelicula.title}}</h1>
+    <img class="detallesImagen" src="http://image.tmdb.org/t/p/w500{{pelicula.poster_path}}" alt="">
+</div>
+<div class="col-6" >
+<h1>Sipnosis</h1>
+<hr>
+<P>
+  {{pelicula.overview}}
+</P>
+<h1> frase celebre</h1>
+<p>algo algo algo algo algo algo</p>
+<br>
+
+<mat-chip-list>
+   <span>Voto promedio:</span> <mat-chip color="primary" selected>{{pelicula.vote_average}}</mat-chip>
+  <span>Popularidad:</span> <mat-chip color="primary" selected> {{pelicula.popularity}}</mat-chip>
+  </mat-chip-list> 
+<br>
+
+<button mat-raised-button color="primary" [routerLink]="['/home']" routerLinkActive="router-link-active" >Regresar</button>
+
+</div>
+
+
+</div>
+
+
+</div>
